@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
+  <header th:replace="header.html :: top">Header tbreplaced</header>
+<!--<header>
     <nav>
         <span>Doctor Secret Service</span>
         <a href="/">Sign In</a>
     </nav>
-</header>
+</header>-->
 <form method="get" action="doctor">
     <fieldset>
         <label for="name">Your doctor's name: </label>
@@ -23,13 +24,14 @@
         <input type="submit" value="Sign In">
     </fieldset>
 </form>
-<footer>
+<footer th:replace="footer.html :: footer">Footer tbreplaced if it's working</footer>
+<!--<footer>
     <ul>
         <li><a href="#">Twitter</a></li>
         <li><a href="#">Facebook</a></li>
         <li><a href="#">TARDIS</a></li>
     </ul>
     <span>Copyright BBC/Terry Nation 1963</span>
-</footer>
+</footer>-->
 </body>
 </html>
